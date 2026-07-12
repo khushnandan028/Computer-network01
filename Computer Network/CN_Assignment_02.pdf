@@ -1,27 +1,26 @@
 # Computer Network Assignment 02 - Wireshark Analysis
 
-This assignment focuses on capturing and analyzing HTTP network traffic using Wireshark to understand protocol layering and data transfer.
+## Overview
+Analysis of network traffic using Wireshark to understand protocol layering, packet inspection, and data transmission.
 
 ## Key Findings
 
 ### 1. Protocol Identification
-The capture revealed communication across multiple layers:
-*   **Application Layer:** HTTP, DNS
-*   **Transport Layer:** TCP (Transmission Control Protocol)
-*   **Network Layer:** IPv4 (Internet Protocol Version 4)
+The following protocols were identified in the network capture:
+* **Application Layer:** HTTP, DNS
+* **Transport Layer:** TCP (Transmission Control Protocol)
+* **Network Layer:** IPv4 (Internet Protocol Version 4)
 
-### 2. Conversation Statistics (Cornell Traffic)
+### 2. Conversation Statistics
 Using the Wireshark Conversations tool for **TCP Stream 44**:
-*   **Total Data:** ~5 kB
-*   **Packet Count:** 25 Packets
+* **Total Data:** ~5 kB
+* **Packet Count:** 25 Packets
 
 ### 3. Detailed Packet Inspection (Frame 9)
-Analysis of the first captured HTTP GET request:
-*   **Source IP:** `10.0.2.15` (Port: `52658`)
-*   **Destination IP:** `91.189.91.97` (Port: `80`)
-*   **Method:** HTTP GET Request (Path: `/`)
+Analysis of the initial HTTP GET request:
+* **Source IP:** `10.0.2.15` (Port: `52658`)
+* **Destination IP:** `91.189.91.97` (Port: `80`)
+* **Method:** HTTP GET Request (`/`)
 
 ## Summary
-The analysis verified the standard HTTP request/response cycle, specifically observing requests for resources like `canonical.html` and connectivity checks via `success.txt`.
-
-Your slide deck and Markdown summary are ready! Let me know if you need any more changes.
+The capture successfully demonstrates the HTTP request/response cycle, specifically verifying requests for resources such as `canonical.html` and connectivity checks via `success.txt`.
